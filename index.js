@@ -16,7 +16,7 @@ let teamArray = [];
 let teamString = '';
 
 console.clear();
-console.log("-----------------------------------------------");
+console.log("-----------------------------------");
 console.log("Team Profile Generator by Zi Wang");
 
 // main function to run app
