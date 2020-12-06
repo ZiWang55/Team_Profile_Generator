@@ -25,5 +25,26 @@ test("Set Email via constructor argument", () => {
 });
 
 test("Get name via getName()", () => {
-    const testValue = ""
-})
+    const testValue = "Zi";
+    const emp = new Employee(testValue);
+    expect(emp.getName()).toBe(testValue);
+});
+
+test("Get ID via getId()", () => {
+    const testValue = 23;
+    const emp = new Employee("Zi", testValue);
+    expect(emp.getId()).toBe(testValue);
+});
+
+test("Get Email via getEmail()", () => {
+    const testValue = "test@mail.com";
+    const emp = new Employee("Zi", 1, testValue);
+    expect(emp.getEmail()).toBe(testValue);
+});
+
+test("getRole() functions correctly", () => {
+    const testValue = "Employee";
+    const emp = new Employee("Zi", 1, "test@mail.com");
+    expect(emp.getRole()).toBe(testValue);
+});
+
