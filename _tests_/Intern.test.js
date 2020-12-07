@@ -15,6 +15,6 @@ test("getRole() functions correctly", () => {
 
 test("Get School via getSchool()", () => {
     const testValue = "Baylor";
-    const emp = new Intern("Jose", 1, "test@mail.com", testValue);
+    const emp = new Intern("Zi", 1, "test@mail.com", testValue);
     expect(emp.getSchool()).toBe(testValue);
 })
