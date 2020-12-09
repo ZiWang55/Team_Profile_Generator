@@ -1,7 +1,6 @@
 //Generate page structure using Bootstrap and Fontawsome
 const generateHTML = function (teamString) {
-
-    return `<!DOCTYPE html>
+  return `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -33,30 +32,28 @@ const generateHTML = function (teamString) {
 <script src="https://kit.fontawesome.com/257de25400.js" crossorigin="anonymous"></script>  
 </body>
 
-</html>`
-
-}
+</html>`;
+};
 
 // Generates cards for each employee class based on user input in Inquirer
 const generateCard = function (arr) {
+  // Fontawesome Icons change based on role
+  let positionIcon;
+  // Criteria for display
+  let roleInfo;
 
-    // Fontawesome Icons change based on role
-    let positionIcon;
-    // Criteria for display
-    let roleInfo;
+  if (arr.title === "Manager") {
+    positionIcon = `<i class="fas fa-mug-hot"></i>`;
+    roleInfo = `Office Number: ${arr.officeNumber}`;
+  } else if (arr.title === "Engineer") {
+    positionIcon = `<i class="fas fa-glasses"></i>`;
+    roleInfo = `GitHub Username: <a href="https://github.com/${arr.github}" target="_blank">${arr.github}</a>`;
+  } else if (arr.title === "Intern") {
+    positionIcon = `<i class="fas fa-user-graduate"></i>`;
+    roleInfo = `School: ${arr.school}`;
+  }
 
-    if (arr.title === "Manager") {
-        positionIcon = `<i class="fas fa-mug-hot"></i>`
-        roleInfo = `Office Number: ${arr.officeNumber}`
-    } else if (arr.title === "Engineer") {
-        positionIcon = `<i class="fas fa-glasses"></i>`
-        roleInfo = `GitHub Username: <a href="https://github.com/${arr.github}" target="_blank">${arr.github}</a>`
-    } else if (arr.title === "Intern") {
-        positionIcon = `<i class="fas fa-user-graduate"></i>`
-        roleInfo = `School: ${arr.school}`
-    }
-
-    return `
+  return `
     
 <div class="col-md-4 col-sm-6 col-12 col-lg-3">    
     <div class="card shadow-lg mb-5 bg-white rounded">
@@ -74,8 +71,8 @@ const generateCard = function (arr) {
         </div>
     </div>
 </div>
-`
-}
+`;
+};
 
 exports.generateHTML = generateHTML;
 exports.generateCard = generateCard;
