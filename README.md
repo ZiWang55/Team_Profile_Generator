@@ -95,7 +95,7 @@ Run the following command at the root of your project and answer the prompted qu
 Testing is done with jest and contains testing for all four Classes: `Employee`, `Manager`, `Engineer` and `Intern`.
 
 ## Contributing
-:octocat: [Joseph DeWoody](https://github.com/ZiWang55)
+:octocat: [Zi Wang](https://github.com/ZiWang55)
 
 ## Questions
 ✉️ Contact me with any questions: [email](mailto:ziwang55@gmail.com) , [GitHub](https://github.com/ZiWang55)<br />

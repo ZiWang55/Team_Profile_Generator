@@ -1,5 +1,5 @@
 // initiate all the requirements
-const inquier = require("inquirer");
+const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const Manager = require("./lib/Manager");
@@ -13,7 +13,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const appendFileAsync = util.promisify(fs.appendFile);
 
 let teamArray = [];
-let teamString = "";
+let teamString = ``;
 
 console.clear();
 console.log("-----------------------------------");
