@@ -26,8 +26,6 @@
   
 ![Team Profile Generator](./src/functionality-gif.gif)
   
-🎥 The full movie file showing functionality of the application can be found [here](./src/functionality-video.webm)  
-  
 ## User Story
   
 ```
